@@ -17,12 +17,15 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.textView);
         SeekBar seekBar = findViewById(R.id.seekBar);
         Button button = findViewById(R.id.button);
+        TextView size = findViewById(R.id.textView2);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String text = (String) textView.getText();
                 textView.setText(Welcome(text));
+
+
             }
         });
 
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 textView.setTextSize((float) i);
+                size.setText("Rozmiar: " + i);
             }
 
             @Override
@@ -55,5 +59,20 @@ public class MainActivity extends AppCompatActivity {
             default:
                return text;
         }
+        /*String[] hellos = {"Dzień dobry", "Good morning", "Buenos dias"};
+        for (int j = 0; j < hellos.length; j++)
+        {
+            if(text == hellos[j])
+            {
+                if(j + 1 > hellos.length)
+                {
+                    return hellos[0];
+                }
+                else
+                {
+                    return hellos[j + 1];
+                }
+            }
+        }*/
     }
 }

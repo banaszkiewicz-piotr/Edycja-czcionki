@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="313dp"
-        android:layout_height="233dp"
+        android:layout_width="320dp"
+        android:layout_height="97dp"
         android:layout_marginTop="108dp"
         android:text="Dzień dobry"
         android:textAlignment="textStart"
@@ -21,13 +21,15 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="344dp"
-        android:layout_height="91dp"
-        android:background="#558B2F"
+        android:layout_width="164dp"
+        android:layout_height="72dp"
+        android:backgroundTint="#558B2F"
+        android:backgroundTintMode="src_in"
         android:text=">>"
         android:textAlignment="center"
         android:textSize="36sp"
         android:textStyle="bold"
+        app:cornerRadius="0dip"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,8 +47,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="103dp"
-        android:layout_height="38dp"
+        android:layout_width="314dp"
+        android:layout_height="41dp"
         android:text="Rozmiar:"
         android:textAlignment="viewStart"
         android:textSize="20sp"
